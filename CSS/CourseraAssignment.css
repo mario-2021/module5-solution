@@ -1,0 +1,251 @@
+:root {
+    --dark-color: #61122f;
+    --green-color: #577e41;
+    --orange-color: #f6b319;
+    --number-color: #557c3e;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-color);
+}
+
+/* Start Navbar */
+
+.navbar {
+    background-color: var(--orange-color);
+}
+
+.navbar .navbar-brand {
+    /* cursor: auto; */
+}
+
+.navbar .navbar-brand h1 {
+    color: var(--green-color);
+    /* cursor: pointer; */
+}
+
+.navbar .stark {
+    font-size: 15px;
+}
+
+.navbar ul li {
+    padding: 3px;
+    margin: 2px;
+}
+
+.navbar ul li a {
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: var(--green-color);
+}
+
+.navbar ul li .nav-link {
+    color: var(--dark-color);
+}
+
+.navbar ul li .menu {
+    color: var(--dark-color);
+}
+
+.navbar ul li .about {
+    color: var(--dark-color);
+}
+
+.navbar ul li .awards {
+    color: var(--dark-color);
+}
+
+.navbar ul .tele-nav {
+    position: relative;
+    top: -10px;
+    right: -7px;
+    font-size: 1.2rem;
+}
+
+.navbar .order {
+    background-color: var(--dark-color);
+    color: var(--orange-color);
+    top: 25px;
+    position: relative;
+    right: 105px;
+}
+
+.navbar .main-btn {
+    right: 0px;
+    top: 5px;
+    width: 103px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+/* End Navbar */
+
+/* Start Landing */
+
+.landing .images img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.landing .images .new-size {
+    width: 315px;
+    height: auto;
+}
+
+.landing .images .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.landing .images .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: #00000094;
+    color: white;
+    width: calc(100% - 10px);
+    height: auto;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.landing .lunch-size {
+    width: 285px;
+    height: 210px;
+}
+
+.landing .menu-item-tile .number-size {
+    bottom: 21px !important;
+    right: 13px !important;
+}
+
+.landing .lunch-bor {
+    border: 1px solid black !important;
+    box-shadow: 0px 0px 10px 0px var(--orange-color);
+}
+
+.landing .ng-binding {
+    background-color: var(--number-color);
+    color: white;
+    font-size: 16px;
+    width: 80px;
+    position: absolute;
+    bottom: 1px;
+    right: 13px;
+}
+
+.landing .main-name {
+    width: 50%;
+    text-align: left;
+}
+
+.landing .main-name .small-size{
+    font-size: 12px;
+}
+
+.landing .price {
+    font-size: 1.8rem;
+}
+
+.landing iframe {
+    border: 2px solid black;
+    height: 300px;
+    width: 100%;
+}
+
+.landing .video .about-video {
+    width: 100%;
+    height: 635px;
+    border: none;
+}
+
+/* End Landing */
+
+/* Start Footer */
+
+.footer {
+    background-color: #222222;
+}
+
+.footer .lastpar {
+    color: var(--green-color);
+    font-size: 13px;
+}
+
+.footer .main-btn {
+    background-color: var(--dark-color);
+    color: var(--orange-color);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: auto;
+}
+
+/* Start Footer */
+/* media Query */
+
+/* @media (min-width: 576px) and (max-width: 991px){
+
+.navbar .container .stark {
+    position: absolute;
+    left: 0;
+}
+} */
+
+@media (max-width: 767px) {
+    .landing .main-name {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .landing .price {
+        text-align: center !important;
+        font-weight: bold;
+    }
+    .navbar .order {
+    position: unset;
+    top: 25px;
+    right: 105px;
+}
+.landing .menu-item-tile .number-size {
+    bottom: 1px !important;
+    right: 13px !important;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .landing .menu-item-tile {
+        width: 100%;
+    }
+    .navbar .order {
+    position: unset;
+    top: 25px;
+    right: 105px;
+}
+.landing .menu-item-tile .number-size {
+    bottom: 1px !important;
+    right: 13px !important;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .landing .menu-item-tile {
+        width: 100%;
+    }
+    .landing .menu-item-tile .number-size {
+    bottom: 1px !important;
+    right: 13px !important;
+}
+}
+@media (min-width: 1200px) {
+    .landing .price {
+        width: 50%;
+        margin-top: 15px;
+    }
+}
